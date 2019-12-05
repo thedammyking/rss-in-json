@@ -1,10 +1,10 @@
 {
   "name": "rss-feed-to-json",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Rss Feed to Json: RSS and Atom feed JSON format generator",
   "main": "dist/index.js",
-  "author": "Oluwadamilola Babalola",     
-  
+  "author": "Oluwadamilola Babalola",
+
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0",
