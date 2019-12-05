@@ -1,19 +1,19 @@
 Utility for parsing ATOM and RSS feed resources and normalize them to JSON object.
 
-This is a fork of [rss-to-json](https://github.com/nasa8x/rss-to-json).
+This is a fork of [rss-feed-to-json](https://github.com/nasa8x/rss-to-json).
 
 Thumbnail support for Medium post was added.
 
 ## Install
 
 ```js
-npm install rss-to-json --save
+npm install rss-feed-to-json --save
 ```
 
 ## Example
 
 ```js
-var Feed = require('rss-to-json');
+var Feed = require('rss-feed-to-json');
 
 Feed.load('https://learnstartup.net/feed/', function(err, rss) {
 	console.log(rss);
