@@ -1,9 +1,9 @@
 {
-  "name": "rss-to-json",
-  "version": "1.0.5",
-  "description": "Rss to Json: RSS and Atom feed generator for Node.js",
+  "name": "rss-feed-to-json",
+  "version": "1.0.0",
+  "description": "Rss Feed to Json: RSS and Atom feed JSON format generator",
   "main": "dist/index.js",
-  "author": "Nasa8x",     
+  "author": "Oluwadamilola Babalola",     
   
   "license": "MIT",
   "dependencies": {
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nasa8x/rss-to-json.git"
+    "url": "git+https://github.com/thedammyking/rss-feed-to-json.git"
   },
   "bugs": {
-    "url": "https://github.com/nasa8x/rss-to-json/issues"
+    "url": "https://github.com/thedammyking/rss-feed-to-json/issues"
   },
-  "homepage": "https://morioh.com/topic/node-js",
+  "homepage": "",
   "keywords": [
     "rss-to-json",
     "rss",
