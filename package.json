@@ -1,6 +1,6 @@
 {
 	"name": "rss-feed-to-json",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Rss Feed to Json: RSS and Atom feed JSON format generator",
 	"main": "dist/index.js",
 	"author": "Oluwadamilola Babalola",

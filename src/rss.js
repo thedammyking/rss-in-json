@@ -104,13 +104,13 @@ module.exports = {
 				if (val['atom:updated']) {
 					obj.atom_updated = val['atom:updated'][0];
 				}
-				if (val['content:encoded']) {
-					obj.content = val['content:encoded'][0];
-				}
 				if (val['content:encoded'] && isMedium) {
 					obj.thumbnail = $.extractFirstImg(
 						val['content:encoded'][0]
 					);
+				}
+				if (val['content:encoded']) {
+					obj.content = val['content:encoded'][0];
 				}
 				// End of Medium Support via @sstrubberg
 
