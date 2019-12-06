@@ -11,3 +11,5 @@ app.js
 note.txt
 package-lock.json
 yarn.lock
+
+!example/app.js
