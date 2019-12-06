@@ -15,7 +15,7 @@ npm install rss-feed-to-json --save
 ```js
 var Feed = require('rss-feed-to-json');
 
-Feed.load('https://learnstartup.net/feed/', function(err, rss) {
+Feed.load('https://medium.com/feed/kudi-stories', function(err, rss) {
 	console.log(rss);
 });
 ```
@@ -25,432 +25,147 @@ Feed.load('https://learnstartup.net/feed/', function(err, rss) {
 ```js
 
   {
- "items": [
-  {
-   "title": "Machine Learning with TensorFlow",
-   "description": "Tackle common machine learning problems with Google’s TensorFlow library and build deployable solutions",
-   "link": "http://learnstartup.net/p/B1D5Et0fYx",
-   "url": "http://learnstartup.net/p/B1D5Et0fYx",
-   "created": 1568687231000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1107990_4f5c_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Machine Learning in JavaScript with TensorFlow.js",
-   "description": "Master machine learning with JavaScript and TensorFlowJS. Add artificial intelligence to websites, Node.js and web apps!",
-   "link": "http://learnstartup.net/p/cp_CimXBm",
-   "url": "http://learnstartup.net/p/cp_CimXBm",
-   "created": 1568643323000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/2447700_3fd0_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Complete Guide to TensorFlow for Deep Learning with Python",
-   "description": "Learn how to use Google's Deep Learning Framework - TensorFlow with Python! Solve problems with cutting edge techniques!",
-   "link": "http://learnstartup.net/p/BJT8gGKsb",
-   "url": "http://learnstartup.net/p/BJT8gGKsb",
-   "created": 1568620313000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1326292_4dcf.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "TensorFlow for Machine Learning Solutions",
-   "description": "Explore machine learning concepts using the latest numerical computing library – TensorFlow",
-   "link": "http://learnstartup.net/p/BysmbBj9M",
-   "url": "http://learnstartup.net/p/BysmbBj9M",
-   "created": 1568617677000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1607266_072c_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Machine Learning & Tensorflow - Google Cloud Approach",
-   "description": "Tensors and TensorFlow",
-   "link": "http://learnstartup.net/p/SJihxrs5M",
-   "url": "http://learnstartup.net/p/SJihxrs5M",
-   "created": 1568617009000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1594160_55a7_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Machine Learning for Android Developer using Tensorflow lite",
-   "description": "Learn Machine Learning and deploy machine learning models in Android Application using tensorflow lite",
-   "link": "http://learnstartup.net/p/ChDBx7NZQ",
-   "url": "http://learnstartup.net/p/ChDBx7NZQ",
-   "created": 1568601963000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/2473538_87a9_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Deep-Learning with The Tensorflow and Python Masterclass!",
-   "description": "Build & Improve Apps driven by machine learning with data & models! Use Google's deep learning framework w/ Java & AI",
-   "link": "http://learnstartup.net/p/nD9sySWdJ",
-   "url": "http://learnstartup.net/p/nD9sySWdJ",
-   "created": 1568601949000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/2466214_d78f.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "THE ULTIMATE TENSORFLOW 2.0 PRACTICAL COURSE",
-   "description": "Master Tensorflow 2.0, Google’s most powerful Machine Learning Library, with 10 practical projects",
-   "link": "http://learnstartup.net/p/SZKrMw3Jd",
-   "url": "http://learnstartup.net/p/SZKrMw3Jd",
-   "created": 1568601942000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/2517884_44cc_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Data Science and Machine Learning with Python and Tensorflow",
-   "description": "Create Apps using Machine learning and Data Science to Create Visual Diagrams and graphic bars with Python!",
-   "link": "http://learnstartup.net/p/6NX2WfN5A",
-   "url": "http://learnstartup.net/p/6NX2WfN5A",
-   "created": 1568601929000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/2523718_8229.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Tensorflow Bootcamp For Data Science in Python",
-   "description": "Complete Tensorflow Mastery For Machine Learning & Deep Learning in Python",
-   "link": "http://learnstartup.net/p/8tNEsvql3",
-   "url": "http://learnstartup.net/p/8tNEsvql3",
-   "created": 1568549653000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/1776912_8b00_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Machine Learning with Javascript",
-   "description": "Master Machine Learning from scratch using Javascript and Tensorflow.JS with hands-on projects.",
-   "link": "http://learnstartup.net/p/HL4Km9ZkT",
-   "url": "http://learnstartup.net/p/HL4Km9ZkT",
-   "created": 1568542387000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/1955654_2ed0.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Modern Deep Learning in Python",
-   "description": "Build with modern libraries like Tensorflow, Theano, Keras, PyTorch, CNTK, MXNet. Train faster with GPU on AWS.",
-   "link": "http://learnstartup.net/p/B1ooWtfYb",
-   "url": "http://learnstartup.net/p/B1ooWtfYb",
-   "created": 1568541799000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/772462_d385.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Bayesian Machine Learning in Python: A/B Testing",
-   "description": "Data Science, Machine Learning, and Data Analytics Techniques for Marketing, Digital Media, Online Advertising, and More",
-   "link": "http://learnstartup.net/p/HkriWtGYb",
-   "url": "http://learnstartup.net/p/HkriWtGYb",
-   "created": 1568541793000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/1011712_a062.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Machine Learning, Data Science and Deep Learning with Python",
-   "description": "Complete hands-on machine learning tutorial with data science, Tensorflow, artificial intelligence, and neural networks",
-   "link": "http://learnstartup.net/p/BkS5nEmZg",
-   "url": "http://learnstartup.net/p/BkS5nEmZg",
-   "created": 1568541457000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/671576_a272_4.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Python for Data Science and Machine Learning Bootcamp",
-   "description": "Learn how to use NumPy, Pandas, Seaborn , Matplotlib , Plotly , Scikit-Learn , Machine Learning, Tensorflow , and more!",
-   "link": "http://learnstartup.net/p/BJzWmGFGg",
-   "url": "http://learnstartup.net/p/BJzWmGFGg",
-   "created": 1568540275000,
-   "enclosures": [
-    {
-     "url": "https://i.udemycdn.com/course/750x422/903744_8eb2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Learning Computer Vision with Tensorflow",
-   "description": "Exploit the power of TensorFlow to create powerful image processing applications",
-   "link": "http://learnstartup.net/p/Sk-TN_Gtb",
-   "url": "http://learnstartup.net/p/Sk-TN_Gtb",
-   "created": 1568528313000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1314890_33c6_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "TensorFlow 101: Introduction to Deep Learning",
-   "description": "Ready to build the future with Deep Neural Networks? Stand on the shoulder of TensorFlow for Machine Learning.",
-   "link": "http://learnstartup.net/p/r1l0yvGtW",
-   "url": "http://learnstartup.net/p/r1l0yvGtW",
-   "created": 1568516359000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1330246_257f_5.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Build and train a data model to recognize objects in images!",
-   "description": "Make an image recognition model with TensorFlow & Python predictive modeling, regression analysis & machine learning!",
-   "link": "http://learnstartup.net/p/-ILK-G_Dw",
-   "url": "http://learnstartup.net/p/-ILK-G_Dw",
-   "created": 1568516201000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1426102_cde1_3.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "A beginners guide for building neural networks in tensorflow",
-   "description": "How to learn deep learning and neural networks in tensorflow from scratch. Tensorflow training for beginners.",
-   "link": "http://learnstartup.net/p/pwBUWEFOR",
-   "url": "http://learnstartup.net/p/pwBUWEFOR",
-   "created": 1568516201000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1438048_d7db_3.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Deep Learning and NLP A-Z™: How to create a ChatBot",
-   "description": "Learn the Theory and How to implement state of the art Deep Natural Language Processing models in Tensorflow and Python",
-   "link": "http://learnstartup.net/p/wdJ9l1SIx",
-   "url": "http://learnstartup.net/p/wdJ9l1SIx",
-   "created": 1568516201000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1460764_a6f8.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Machine Learning and Data Science Essentials with Python & R",
-   "description": "Master Machine Learning with Python, Tensorflow & R. Data Science is the most in-demand and Highest Paying Job of 2018",
-   "link": "http://learnstartup.net/p/yxdg4LEhP",
-   "url": "http://learnstartup.net/p/yxdg4LEhP",
-   "created": 1568516095000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1471462_10f1.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "TensorFlow and the Google Cloud ML Engine for Deep Learning",
-   "description": "CNNs, RNNs and other neural networks for unsupervised and supervised deep learning",
-   "link": "http://learnstartup.net/p/PFis75NCJ",
-   "url": "http://learnstartup.net/p/PFis75NCJ",
-   "created": 1568516095000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1474682_cc04_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Deep Learning: Advanced Computer Vision",
-   "description": "Advanced Computer Vision and Convolutional Neural Networks in Tensorflow, Keras, and Python",
-   "link": "http://learnstartup.net/p/GgoR4gKyz",
-   "url": "http://learnstartup.net/p/GgoR4gKyz",
-   "created": 1568516095000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1533864_a443.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Tensorflow for Beginners",
-   "description": "A complete guide for building machine learning and deep learning solutions using Tensorflow",
-   "link": "http://learnstartup.net/p/EZnt_ES_X",
-   "url": "http://learnstartup.net/p/EZnt_ES_X",
-   "created": 1568516095000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1583732_85fe.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Intro to TensorFlow - For iOS & Android",
-   "description": "Learn artificial intelligence, machine learning & coding. Build projects! Explore Python, Java, PyCharm, databases, more",
-   "link": "http://learnstartup.net/p/J7oG-usgP",
-   "url": "http://learnstartup.net/p/J7oG-usgP",
-   "created": 1568516095000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1595152_3910.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Mobile Machine Learning for Android: TensorFlow & Python",
-   "description": "Use PyCharm, Java & Android Studio to make apps using artificial intelligence. Learn with hands-on projects & examples!",
-   "link": "http://learnstartup.net/p/Zc36KVR37",
-   "url": "http://learnstartup.net/p/Zc36KVR37",
-   "created": 1568516095000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1597758_1252.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Deep Learning Project Building with Python and Keras",
-   "description": "Learn to make Android Keras image recognition models! This epic course covers Android Studio, Java, TensorFlow and more",
-   "link": "http://learnstartup.net/p/cPo3zdRLr",
-   "url": "http://learnstartup.net/p/cPo3zdRLr",
-   "created": 1568515912000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1620238_dad4.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "Make predictions with Python machine learning for apps",
-   "description": "Leverage TensorFlow models to build & improve apps! Use Google's deep learning framework w/ Java & AI. Beginner-friendly",
-   "link": "http://learnstartup.net/p/6j0p7bVwE",
-   "url": "http://learnstartup.net/p/6j0p7bVwE",
-   "created": 1568515912000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1622334_5faf.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "The Complete TensorFlow Masterclass: Machine Learning Models",
-   "description": "A complete & comprehensive course in which you create a portfolio of apps driven by machine learning with data & models!",
-   "link": "http://learnstartup.net/p/8vTep-sSu",
-   "url": "http://learnstartup.net/p/8vTep-sSu",
-   "created": 1568515912000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1631000_6729.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  },
-  {
-   "title": "The Stock Prediction & Math Functions with Data Bootcamp",
-   "description": "Learn Python NumPy and predict the stock market with artificial intelligence and TensorFlow! Master core programming.",
-   "link": "http://learnstartup.net/p/WnN2RIdVH",
-   "url": "http://learnstartup.net/p/WnN2RIdVH",
-   "created": 1568515912000,
-   "enclosures": [
-    {
-     "url": "https://udemy-images.udemy.com/course/750x422/1652628_e3d4_2.jpg",
-     "length": "0",
-     "type": "image/jpeg"
-    }
-   ]
-  }
- ],
- "title": "Learn Startup - Build a successful business and change the world",
- "description": "Learn Startup, starting a business, Mobile Development and Design with Node.js, Angular.js, React.js, Python, MongoDB, HTML5, CSS3, JavaScript, PHP, mobile app development, Responsive Web Design",
- "url": "http://github.com/dylang/node-rss",
- "image": ""
+    items:[
+      {
+        title: 'LIFE AT KUDI — Meet Olakunle Adeyinka (Seeker)',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-olakunle-adeyinka-seeker-1567f966b81?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-olakunle-adeyinka-seeker-1567f966b81?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Thu, 28 Nov 2019 09:45:08 GMT',
+        atom_updated: '2019-11-28T11:40:27.521Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*OJoOoGfK6Uj2XBTG6ZkPPw.jpeg',
+        content:
+          '<h3>LIFE AT KUDI — Meet Olakunle Adeyinka (Seeker)</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*OJoOoGfK6Uj2XBTG6ZkPPw.jpeg" /></figure><p>Hi Seeker!</p><h3>How do you prefer to start your day?</h3><p>I like to start my day with a short prayer and a really nice breakfast.Sometimes, its home-cooked, but I also buy food from different places. My top food spots are Cutlery and Foodies for a quick breakfast. It helps my productivity. Lol.</p><h3>What’s a work-related accomplishment that you’re really proud of?</h3><p>Oh, I am really proud of where the company is today. I remember when I joined Kudi, the vision of the company might have seemed very far off. And yet, in a couple years, we have done so much already. It is very inspiring to watch. It gets me excited about where we are going.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*yYqKneav34NcBg2kPkmh0Q.jpeg" /></figure><h3>What exactly do you do for Kudi?</h3><p>I deal with terminal operations and activating terminals. Basically, everything that has to do with POS terminals. After the acquisition is completed by the business team, I take over. I am in charge of deployment and management.</p><h3>What has Kudi taught you about money?</h3><p>I quickly learned that no amount is insignificant. Every 5 naira counts. You should be able to account for how you spent it. No matter how small, it means something. The books would not be balanced otherwise. Also, the amount, no matter how small, might be all a customer has. People have issues and complaints about the tiniest amounts. I have learned to honour people’s monies.</p><h3>What’s one thing you’re learning now, and why is it important?</h3><p>I am learning mobile money operations. Specifically, I am taking a course called “An End-to-End Guide To Mobile Money Business”. This will enable me to understand the intricacies of mobile money and how to apply it in practical terms. I also am looking into Product School to better understand the business.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*Cj9_3gTh3j6EKjILtLEkmg.jpeg" /></figure><h3>Where is yourfavourite place in the office?</h3><p>My table, where I sit with my team. And the game area.</p><h3>What do you do to turn things around when you’re having a bad day?</h3><p>I listen to good music. I particularly like blues. My favourite artistes are Lil’ Kesh and Joe.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*W0GVE7OHoqby7rTsmxTA6Q.jpeg" /></figure><h3>If you are to pick a permanent age for yourself, what age would you choose, and why?</h3><p>30. Because I think this is the pointwhen there should be a significant change in your life — financially and relationally. If I could, I’dlike to stay here, build and explore that change.</p><h3>If you could only eat one item for every mealfor the rest of your life, what would it be?</h3><p>Lol. That’s a tough one but definitely bread and beans.</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=1567f966b81" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-olakunle-adeyinka-seeker-1567f966b81">LIFE AT KUDI — Meet Olakunle Adeyinka (Seeker)</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1574934308000
+      },
+      {
+        title: 'Life at Kudi — Meet Adeshewa Adeyemo',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-adeshewa-adeyemo-70cf9bd55466?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-adeshewa-adeyemo-70cf9bd55466?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Sun, 03 Nov 2019 15:53:14 GMT',
+        atom_updated: '2019-10-31T13:14:03.670Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*I1_a16p0mW5jBlxmJdYHLA.jpeg',
+        content:
+          '<h3>Life at Kudi — Meet Adeshewa Adeyemo</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*I1_a16p0mW5jBlxmJdYHLA.jpeg" /></figure><p>Shewa Adeyemo is a Business &amp; Partnership Associate at Kudi.</p><h3>What do you do at Kudi, and in what circumstances would I come to you for something?</h3><p>I work as a Business &amp; Partnership Associate. You can come to me if you are anexternal company, and you want to discuss a potential partnership with Kudi. I would typically hold those conversations and steer them in the right direction. If you are a staff of Kudi, you can come to mewhen you have any issues that only an external company can resolve. Also, if you have an idea or a beneficial partnership you want the Business &amp; Partnership team to pursue, I’m your gal.</p><h3>What has Kudi taught you about money?</h3><p>Kudi has taught me that there’s a lot of money moving in and around our country, Nigeria. All you have to do is figure out the need that people have, come up with a solution to that need, and offer it to them for some amount. Lol.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*GEcMzharGdJfeAyF5wOMXw.jpeg" /></figure><h3>Why did you join Kudi?</h3><p>I joined Kudi because of the first impression I had when I came in for my interview. The company wasa lot smaller then, I really loved the vibe, the togetherness, the people I met that day were so amazing and welcoming, and when I started work, I knew I had made the right decision. Also, the part where everyone sits around eating, during the lunch hour, and brainstorming on how to do one thing or the other. This place allows you to grow.</p><h3>If you could write a book about your life, what would the title be, and why?</h3><p>Taking Charge of Your Life. Because I learned early in life that your life is yours and yours alone, your family and loved ones can only guide and advise you. It’s up to you to take the advice or not take it. But the only person that will reap the consequences, whether good or bad, is you.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*aPTt47YPfk0wRmzMud2WhA.jpeg"/></figure><h3>What energizes you outside of work?</h3><p>Some days, I just want to stay locked up in my room reading and watching movies, other days I want to go out and turn up with my friends. We would normally go out to eat at restaurants, listen to live bands and occasionally, clubs.</p><h3>What’s the weirdest food you’ve ever eaten?</h3><p>Hmmm, white rice, and butter, lol. I really hate spicy food.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*hz6WneR_-f0zdKJu6Og_Sw.jpeg" /></figure><h3>What’s something — big or small — that you’re really good at?</h3><p>I’m very good at recommendations. I can literally recommend anything based on your needs.</p><h3>What’s the one song you have completely memorized?</h3><p>Lol, that’d be “A Thousand Years” by Christina Perri.</p><p>Thank you so much, Shewa!</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=70cf9bd55466" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-adeshewa-adeyemo-70cf9bd55466">Life at Kudi — Meet Adeshewa Adeyemo</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1572796394000
+      },
+      {
+        title: 'Life at Kudi — Meet Fola Animashaun',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-fola-animashaun-e6994974e43d?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-fola-animashaun-e6994974e43d?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Mon, 14 Oct 2019 12:15:14 GMT',
+        atom_updated: '2019-10-03T13:03:11.987Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*KXGtxBpWjJ40hmDjc8qAEA.jpeg',
+        content:
+          '<h3>Life at Kudi — Meet Fola Animashaun</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*KXGtxBpWjJ40hmDjc8qAEA.jpeg" /><figcaption>Fola Animashaun, Data Analyst at Kudi</figcaption></figure><p>Fola Animashaun is a Data Analyst on the Internal Tools team at Kudi.</p><p>Hey Fola,</p><h3>Why did you join Kudi?</h3><p>I think it was more about the people for me in Kudi. Everyone feels like family. It doesn’t feel like a “job”. Everyone cares about everyone. When you are ill, everyone will check on you. And you can tell that it is genuine.</p><h3>What do you do at Kudi and in what circumstances would I come to you for something?</h3><p>I work as a Data analyst. People come to me whenthey need data for their reports or data to see what’s happening. In Kudi, data is important because we can’t make decisions based on feelings. Even when you have an intuition, you will still need numbers to back it up. We also need data to track progress and see what areas we need to improve on as a company.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/964/1*TBeS_TM8N2k9SsjHx96HHQ.jpeg" /></figure><h3>What’s one thing that surprised you about working at Kudi?</h3><p>I think that what surprised me was seeing people working voluntarily on weekends. It was a new angle for me, but I realised that if you love what you do, then that won’t be a problem. Plus every single person is really kind, and that was just strange.</p><h3>If you could change roles with someone for a day, who would it be?</h3><p>Whoever is in charge of Nepa changeover. Lol. I can turn off the lights when I don’t want people to see me. But if we are talking about being bold, I guess it would be with the CEO. He has to put himself out there and push us forward, regardless of how he is feeling. He has to pitch his ideas and risk rejection to bring success. And in the process, he experiences really great moments, I think. That’s pretty cool.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*sjyUJ8AvjhgfurAzK3tB0A.jpeg" /></figure><h3>Who has influenced you most when it comes to how you approach your work?</h3><p>My team lead. He is a product manager in Internal Tools. He is a perfectionist, and I mean that as a compliment. He challenges me. He is a good influence on my work. He thinks if you are going to do anything, you might as well do it very well.</p><h3>How would you describe yourself?</h3><p>I am quiet but social. I like engaging with people a lot which probably involves going out. I can be very playful, and I neverfollow through with an argument. Like, there’s no point.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*W-vU5l2HL-1IUzlV893tvQ.jpeg" /></figure><h3>Where are your favourite places to visit?</h3><p>I like adventures, but there are not a lot of activities in Nigeria, I think. Outside the country, I like to go to theme parks. Lol. I like any activity that involves adrenaline. I like to swim too.</p><h3>What book are you currently reading, and what have you learned?</h3><p>What Fresh Hell by Lucy Vine. Lol. It is a book about a girl that kept attending events to please people and eventuallylost everyone important to her. I learned you need to stop being a people pleaser. Put yourself first.When you don’t prioritise right, you will lose yourself, and you’d lose people too. So I guess what you really need is balance and a lot of it.</p><h3>What would we most likely find you doing on the weekend?</h3><p>Sleeping, working, and Netflix. Sometimes, I go out to restaurants and chill places.</p><p>Thank you, Fola!</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=e6994974e43d" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-fola-animashaun-e6994974e43d">Life at Kudi — Meet Fola Animashaun</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1571055314000
+      },
+      {
+        title: 'LIFE AT KUDI — Meet Onyinye Iheonu',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-onyinye-iheonu-358088a0d567?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-onyinye-iheonu-358088a0d567?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Mon, 14 Oct 2019 12:14:29 GMT',
+        atom_updated: '2019-07-18T09:25:53.019Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*5WbJeUrsgS6aMHNPAZIkEQ.jpeg',
+        content:
+          '<figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*5WbJeUrsgS6aMHNPAZIkEQ.jpeg" /><figcaption>Onyinye Iheonu, Relationship Manager at Kudi</figcaption></figure><h3>LIFE AT KUDI — Meet Onyinye Iheonu</h3><p>Onyinye Esther Iheonu is a relationship manager at Kudi. She is a part of the growth team and specifically in charge of on-boarding new agents.</p><p>Hi Onyinye!</p><h3>Can you tell us what On-boarding is?</h3><p>On-boarding is simply the first human contact new agents have with the company after they register. This is to help the agents clarify their goals in Agency Banking and thedifferent functionalities of Kudi. Their information is recorded and sent to regional managers for further management.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*TpLT4jdYfBdqDv-0Ok4w2Q.jpeg" /></figure><h3>Why did you join Kudi?</h3><p>I saw how they treated their employees. I remember seeing a friend’s updates about how employees in Kudi are friends with their bosses. It was especially attractive how they seemed like one big happy family. It was the spirit of the company that pulled me in.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*BidJD4EMFQEEksdPfCdoBQ.jpeg" /><figcaption>“We are happy here” — Onyinye</figcaption></figure><h3>What’s one thing that surprised you about working at Kudi?</h3><p>The fact that people actually care about others here. If you work here, you work with people that want to know how you are doing. I was pleasantly surprised that you can come dressed as you like and still get a lot of work done. We are happy here. I used to work in telecommunications with a lot of older people who just wanted to send you on errands as opposed to engagingyou intellectually or caring about your wellbeing. Kudi is a refreshing change.</p><figure><img alt=""src="https://cdn-images-1.medium.com/max/1024/1*evkxgBkK5n-tk6WhJ8fCWw.jpeg" /></figure><h3>Who has influenced you most when it comes to how you approach your work?</h3><p>LMD, the Growth Team Lead. He hasthis drive, strength and wisdom that produce amazing ideas. I consider how young he is and how much ofa force he is in the business and Fintech space. It seems as though he comes up with something new every day. He dodges landmines in a way that there is no opportunity for a recurrent pitfall. This empowers me to think outside the box. I know now that ideas that might seem irrelevant can turn out to be useful. My opinion matters and the ideas I have inside the shower can be helpful.</p><h3>If you could writea book about your life, what would the title be and why?</h3><p>LOL. The Evolution of a Dark-Skinned Girl. I know now that things change. Some things happen that you can’t plan for. When you think you havefigured yourself out and you are now ‘there’, you find out that there is a new level and something newto grow into. It can be overwhelming at times, but it is impressive for me as well to see myself evolve, and see what I am capable of. I used to see myself as an introvert, but I am learning new things about me every day, and seeing that I can also become the person that is the life of the party.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*PtCWWEJK4i9mLNVs_GwSPw.jpeg" /></figure><h3>What energises you outside of work?</h3><p>I read a lot of books and watch a lot of movies. I am at my most relaxed state when I am reading a book and picturing someone else’s experiences. It’s like stepping out of your shoes into someone else’s.</p><h3>What’s one professional skill you’re currently working on?</h3><p>Data analysis and communication.</p><h3>What would we most likely find you doing on the weekend?</h3><p>I am probably at the cinema or reading a book. If I get dragged to a club or bar, I will go.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*iDe_dxqI7tHsiEFPKjwogA.jpeg"/></figure><p>This was wonderful. Thank you, Onyinye!</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=358088a0d567" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-onyinye-iheonu-358088a0d567">LIFE AT KUDI — Meet Onyinye Iheonu</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1571055269000
+      },
+      {
+        title: 'LIFE AT KUDI- Meet Seun Meshileya',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-seun-meshileya-13c990d7543?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-seun-meshileya-13c990d7543?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Mon, 14 Oct 2019 12:14:02 GMT',
+        atom_updated: '2019-07-11T09:47:03.534Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*3qb21BYTJZz1U62GWCP38g.jpeg',
+        content:
+          '<figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*3qb21BYTJZz1U62GWCP38g.jpeg" /><figcaption>Seun Meshileya, Android Engineer at Kudi</figcaption></figure><p>Fondly known as Mesh, Seun is an Android engineer on the App Team and is committed to giving our app users the best experience possible.</p><p>Hola Mesh!</p><h3>What do you do at Kudi and in what circumstances would I come to you for something?</h3><p>At Kudi, I am an Android engineer. My job is to ensure that everything relating to the mobile app works perfectly well. I maintain old features and create new ones. Anytime you have issues with the Kudi app; you’d have to meet me to deal with it. For instance, if you can’t log in into the app, the first place to come to is the app team. I also work on the app interface.</p><h3>What has Kudi taught you about money?</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*AkvxUwMINx6JidUC6pQ60Q.jpeg" /></figure><p>I learn every day that every bit of money counts. You mightlook at a sum and think it is small, but every number affects the final sum. No matter how large the sum, or how little, it all is important and it all adds up. Small holes can eventually sink any ship. Sowhen I spend, I think twice and ask myself if it’s really worth it.</p><h3>What energises you at work?</h3><p>Normally, I am a full energy god. LOL.</p><blockquote><strong>I’d say that making life easier for our users is what inspires me. Because of this, I try to ensure our users have a better experience. I always say that if you can make it easy, you don’t need to make it hard.</strong></blockquote><p>Mostly, I envision the reaction of the user when they use our products. The app is more or less the face ofKudi. And obviously, the Game Room.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*UbMBwIL3TV8y7QXn-LYhxQ.jpeg" /><figcaption>“I believed in the Kudi dream”</figcaption></figure><h3>What’s a work-related accomplishment that you’re really proud of?</h3><p>Before I started working on this team, the level of interaction with the app was quite low. However, as of right now, that is different. The growth has been exponential. It’s just crazy. The feedback is also very surreal.</p><h3>Why did you join Kudi?</h3><p>I believed in the Kudi dream. I saw that the prospect was very high. Also, the level of engineering in Kudi is one of the best in Nigeria and Africa. We are reliable, consistent, andwe give our customers what they want. The culture was also very attractive to me. I love that we don’trun a top-down hierarchy but a flat system. Not to mention the benefits of having brilliant colleagues.</p><h3>What three words would your friends use to describe you?</h3><p>Funny, savagery master, and a go-getter.</p><h3>What’s your favourite sport to watch and which team do you root for?</h3><p>LOL. Football, of course. Liverpool — Red runs in our blood; we never walk alone.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*ot2ltuNm76EW7rWdGhWXpg.jpeg" /></figure><h3>What would we mostlikely find you doing on the weekend?</h3><p>Learning something new or hanging out with my babe and myguys. My favourite place to hang out is Hans and Rene.</p><p>This is great! Thank you, Mesh!</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=13c990d7543" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-seun-meshileya-13c990d7543">LIFE AT KUDI- Meet Seun Meshileya</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1571055242000
+      },
+      {
+        title: 'LIFE AT KUDI — Meet Tolu Abiodun',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-tolu-abiodun-553d5f0cae3f?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-tolu-abiodun-553d5f0cae3f?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Thu, 05 Sep 2019 09:01:02 GMT',
+        atom_updated: '2019-09-12T10:23:46.423Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*meqGB8Px5JoqmwbHKGTOuw.jpeg',
+        content:
+          '<h3>LIFE AT KUDI — Meet Tolu Abiodun</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*meqGB8Px5JoqmwbHKGTOuw.jpeg" /></figure><p>Hola Tolu!</p><h3>What do you do at Kudi andin what circumstances would I come to you for something?</h3><p>I manage products for consumer services. Consumer services include the Mobile app, Kudi website and KAGU. KAGU is where the super agents can earn commissions, see their transaction and their agents. You will need to come to me if you notice an issue on the app or have a service request. If you have a feature that will improve the app or website,I’m the guy you will come to for that. Or if you had money to give me lol.</p><h3>What has Kudi taughtyou about money?</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*CliDXUOpy2S-Sfc_OCd7Eg.jpeg" /></figure><p>I have learned that money is life. The experiences I have had here allowsme to see now that the decimal points in big figures mean a whole lot. When a customer with an issue contacts support, it might seem small, but it is life to that person. This makes me want to do more to make banking easy for all our agents and consumers.</p><h3>Why did you join Kudi?</h3><p>I had been following Kudi from the initial stages, while I was still in school. The growth is amazing. I wanted to be part of something phenomenal. Kudi has an exciting work culture, amazing people and talents to work with. And of course, I needed a job.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*dLC0e_doICWqYIFaDeZhEA.jpeg" /></figure><h3>What’s your go-to productivity trick?</h3><p>Coke and coffee.</p><h3>What do you think the one-year future predictions for Kudi is?</h3><p>More than the numbers, I am looking at a Kudi where agents, customers and employees are satisfied. I see a time when the company is gaining a considerable share of the market. In this future, we have found a way to overcome andmanage the challenges we are currently facing. We also have projections to surpass our set goals.</p><h3>What three words would your friends use to describe you?</h3><p>Weird, Fun, and just too handsome. Lol.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*rH6qNLVFUtQkrWmlz_z8Cw.jpeg"/></figure><h3>What’s something — big or small — that you’re really good at?</h3><p>I am really good at watching movies.</p><h3>What’s your favourite sport to watch and which team do you root for?</h3><p>Football. Manchester United. And obviously, the GOAT is Ronaldo.</p><h3>What do you do to turn things around when you’re having a bad day?</h3><p>Instagram funny videos.</p><h3>If you could snap your fingersand become an expert in something, what would it be?</h3><p>Lol. Expert at making money. Money stops nonsense.</p><p>Thank you, Tolu. That was a great laugh!</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=553d5f0cae3f" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-tolu-abiodun-553d5f0cae3f">LIFE AT KUDI — Meet Tolu Abiodun</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium,where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1567674062000
+      },
+      {
+        title: 'LIFE AT KUDI — Meet Chukwuma Okwuanalu',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-chukwuma-okwuanalu-6bee4839df45?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-chukwuma-okwuanalu-6bee4839df45?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Wed, 21 Aug 2019 08:43:55 GMT',
+        atom_updated: '2019-08-22T07:11:17.676Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*Ww9E_JSZzPUIhiUt8DJEVQ.jpeg',
+        content:
+          '<h3>LIFE AT KUDI — Meet Chukwuma Okwuanalu</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*Ww9E_JSZzPUIhiUt8DJEVQ.jpeg" /></figure><p>Hi Chukwuma,</p><h3>What’s one thing that surprised you about working at Kudi?</h3><p>I was and am surprised that we are doing so well as a company without great publicity. We were able to make impact silently. We are terrific, and companies that are doing this good usually have a lot of publicity. But we didn’t do that until recently. We are the exception to that rule, and that’s pretty impressive. I know we are doing so well because we are continually hitting our set targets and surpassing them.</p><h3>What’s the most significant misconception people have about your position?</h3><p>People do not realise how hands-on we are on my team. We do as much hands-on work as anyone will do. We have to relate with every single team in the company and sometimes managing that can be tricky.</p><h3>What behaviour or personality trait do you most attribute your success to, and why?</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*QYt4nvKCeSLC5ozJcBAovg.jpeg" /></figure><p>LOL. I have an easy-going nature. I believe this makes me all the moreapproachable. When it is easy for people to approach you, communication can take place. This is very key for Issue Resolution. However, easy-going is not calm. It just means you can relate and sync with other people’s thoughts.</p><p>Also, I believe I am generous with information because that is how we can all move the company forward together.</p><h3>What has Kudi taught you about money?</h3><p>I have learned how important every single naira is. I hear the customers talking about every size of the amount. And they are all important; the one million customer and the 1000 customers. You cannot afford to look down on anyone. I appreciate people’s right to their money better now.</p><h3>What do you do to turn things around when you’re having a bad day?</h3><p>I take a walk and plug into Jay-Z. He has something for every situation. No matter the situation you go through, there is a JayZ verse for it.</p><h3>If you could trade places with anyone for a day, who would you choose?</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*qZXk9zsxXN8Tc-DwH8wI-w.jpeg" /></figure><p>Tope in People Operations. Itwill be cool and enlightening to see how the operations of the company flow. But if it were for more than one day, it’d be Yinka. And if it was someone outside our space, definitely JayZ.</p><h3>What’s your favourite sport to watch and which team do you root for?</h3><p>Football. Hala Madrid. Sergio Ramos is the king.</p><h3>What’s the weirdest food you’ve ever eaten?</h3><p>Lol. Rice and Okra. I travelled to the USA to see my cousin and her husband, who is an African (not Nigerian), and eats it as a delicacy.</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=6bee4839df45" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-chukwuma-okwuanalu-6bee4839df45">LIFE AT KUDI — Meet Chukwuma Okwuanalu</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1566377035000
+      },
+      {
+        title: 'LIFE AT KUDI — Meet Taiwo Ogundapo',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-taiwo-ogundapo-f972d83e27d?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-taiwo-ogundapo-f972d83e27d?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Thu, 25 Jul 2019 07:01:21 GMT',
+        atom_updated: '2019-07-25T07:01:21.532Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*EbJJ0DWAr0IoRnhNQk9yOg.jpeg',
+        content:
+          '<h3>LIFE AT KUDI — Meet Taiwo Ogundapo</h3><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*EbJJ0DWAr0IoRnhNQk9yOg.jpeg" /><figcaption>Taiwo Ogundapo, Finance Team Member</figcaption></figure><p>Hey Taiwo,</p><h3>What do you do at Kudi and in what circumstances would I come to you for something?</h3><p>I work in the Finance team. I handle the resolution process of chargebacks. Chargeback issues arise when customers don’t get value for what they were debited for. Approving or disapproving chargebacks is sometimes a high priority. I have to check with the banks to see if they have a record of the transaction and also check if we received the transaction. It can be a lot of responsibility because it involves customers’ money.</p><h3>What has Kudi taught you about money?</h3><p>One of theessential things that Kudi has taught me about money is that people have their hearts in their money, and rightly so. Your customer base is what funds or fuels your company. I am now accountable for the money I spend because it all comes back around. And you have to value that people’s money equals people’slifelines. And that is important. It is key.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*DA-JJdlhYqcdO9pnGeNBvw.jpeg" /></figure><h3>Why did you join Kudi?</h3><p>Initially, I came into Kudi for my PPA (Place of Primary Assignment). I realised that this is a team of young people that are smart and resolute. I could see what Yinka and Pelumi are building, together with all of us, and it keeps me on my toes.</p><blockquote><strong>Your customer base is what funds or fuels your company. And you have to value that people’s money equals people’s lifelines. And that is important. — Taiwo Ogundapo, Finance Team.</strong></blockquote><h3>What’s the most significant misconception people have about your position?</h3><p>Because we are two people that handle chargebacks, people expect that we should finish what we do faster. And sometimes, they assume that we lounge or chill. People don’t understand that there should be a balance between our rapport with the different teams and the banks as well tobe truly effective.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*Zd4Z_QrptjISFjsblCVpSw.jpeg" /></figure><h3>What’s your go-to productivity trick?</h3><p>I hate noise. When I havetight deadlines to meet, I charge myself, get a sticky note and itemise all I need to do. Then I find a quiet place to work. Sometimes, I wait until the middle of the night to do all I need to do.</p><blockquote>Quiet fuels me. — Taiwo</blockquote><h3>What four words would your friends use to describe you?</h3><p>Reserved, Prayerful, Smart and Playful</p><h3>How would you describe yourself?</h3><p>I’d describe myself as a reserved person. A quiet person doesn’t talk often, but a reserved person knows just when to talk.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*Hm84Du6rSGACzqVs-v5GNg.jpeg" /><figcaption>“LOL. I have a thing for nature.”</figcaption></figure><h3>What fictional place would you like to visit?</h3><p>Mobunktu, Kuvuki Kingdom — a kingdom where we don’t wear clothes but leaves. LOL. I have a thing for nature.</p><h3>What book are you currently reading, and what have you learned?</h3><p>Becoming by Michell Obama. I learned that before all the First Lady glamour, she was an ordinary person like everyone, and she didn’t let anything that happened to her determine where she ended up.</p><p>Thank you, Taiwo!</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=f972d83e27d" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-taiwo-ogundapo-f972d83e27d">LIFE AT KUDI — Meet Taiwo Ogundapo</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1564038081000
+      },
+      {
+        title: 'LIFE AT KUDI — Meet Promise Eliminhele',
+        description: '',
+        link:'https://medium.com/kudi-stories/life-at-kudi-meet-promise-eliminhele-325790a8357c?source=rss----48c0acbcdfca---4',
+        url:'https://medium.com/kudi-stories/life-at-kudi-meet-promise-eliminhele-325790a8357c?source=rss----48c0acbcdfca---4',
+        guid: [Object],
+        category: [Array],
+        author: 'Kudi',
+        pubDate: 'Thu, 04 Jul 2019 08:47:11 GMT',
+        atom_updated: '2019-07-08T05:52:36.032Z',
+        thumbnail:'https://cdn-images-1.medium.com/max/1024/1*8nUAecwc3ekBFxfPBCJmag.jpeg',
+        content:
+          '<figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*8nUAecwc3ekBFxfPBCJmag.jpeg" /><figcaption>Promise Eliminhele, Kudi Customer Success Associate</figcaption></figure><h3>LIFE AT KUDI — Meet Promise Eliminhele</h3><p>Promise is a Customer Success Associate at Kudi. She started working with us in 2018 and has, since then, become invaluable to her team.</p><p>Hi Promise!</p><h3>What’sone thing that surprised you about working at Kudi?</h3><p>I was and still, am surprised by the way everyone puts a lot of energy into doing their jobs. Everyone at Kudi is always ready to go above and beyond to deliver. Extra hours. Overtime. People here work like they are personally invested in Kudi. I particularly love that the workflow is mostly seamless, and tasks are completed without any bossing around.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*6GJjVGpeOYdivgnK8cEo9A.jpeg" /></figure><h3>What’s the biggest misconception people have about your position?</h3><p>So, typically, I usually wear a straight face. Because of that, people assume that I am mean. And they wonder how I can work in Customer Support. Truth be told, I never saw myself doing customer support. However, it has helped me personally. Every day, I learn how to relate better with people. I learn communication skills and how to deal with provoking situations better.</p><blockquote><strong>The drive for me in Customer Support is knowing that at the end of the day, I am solving someone’s problems, and making someone’s life easier.</strong></blockquote><h3>If you could snap your fingers and become an expert in something, what would it be?</h3><p>LOL. An expert at making money.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*MPoO-AKi11jdvjhTFadFQg.jpeg" /><figcaption>“LOL. An expert at making money”</figcaption></figure><h3>So, what has Kudi taught you about money?</h3><p>I have learned that anyone can make money in Nigeria because there are a lot of problems to solve. Look for a problem, think of distinctand creative ways to solve that problem. You can monetise your ideas. I see young people doing amazingthings and making money from it with Kudi. Kudi also shows me that I am not far from my goals in life.I just need to work smart, and I’d earn well.</p><h3>Why did you join Kudi?</h3><p>I saw young people who are relatable and hardworking. That was enough motivation. Our co-founders are young, and the environment is not toxic. There is no yelling or bossing around, and everyone can understand what you go through per time.</p><p>I saw young people making money and making a change. Shows that both can be done and are not mutually exclusive.</p><figure><img alt="" src="https://cdn-images-1.medium.com/max/1024/1*pFWw1nUli-hhvh0cn5mUkQ.jpeg" /></figure><h3>What’s something — big or small — that you’re really good at?</h3><p>Cooking fried rice and porridge.</p><h3>What would we most likely find you doing on the weekend?</h3><p>Working or watching cooking competitions.</p><h3>What’s the one song you have completely memorised?</h3><p>Mr Endowed by Dbanj.</p><p>Thank you for your time, Promise!</p><img src="https://medium.com/_/stat?event=post.clientViewed&referrerSource=full_rss&postId=325790a8357c" width="1" height="1"><hr><p><a href="https://medium.com/kudi-stories/life-at-kudi-meet-promise-eliminhele-325790a8357c">LIFE AT KUDI — Meet Promise Eliminhele</a> was originally published in <a href="https://medium.com/kudi-stories">Kudi Stories</a> on Medium, where people are continuing the conversation by highlighting and responding to this story.</p>',
+        created: 1562230031000
+      }
+    ]
+    title: 'Kudi Stories - Medium',
+    description:'Making financial services accessible and affordable for all Africans. - Medium',
+    url:'https://medium.com/kudi-stories?source=rss----48c0acbcdfca---4',
+    image:'https://cdn-images-1.medium.com/proxy/1*TGH72Nnw24QL3iV9IOm4VA.png'
 }
 
 
