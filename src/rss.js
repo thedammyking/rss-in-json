@@ -107,7 +107,7 @@ module.exports = {
           obj.content = val['content:encoded'][0];
         }
         if (val['content:encoded'] && isMedium) {
-          console.log($.extractImg(val['content:encoded'][0]))
+          console.log($.extractFirstImg(val['content:encoded'][0]))
         }
         // End of Medium Support via @sstrubberg
 
@@ -167,7 +167,7 @@ module.exports = {
   read: function (url, callback) {
     return this.load(url, callback);
   },
-  extractImg: function (html) {
+  extractFirstImg: function (html) {
     var parsedHtml, figure, img;
     var handler = new htmlparser.DefaultHandler(function (
       error,
