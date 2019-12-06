@@ -1,64 +1,64 @@
 {
-  "name": "rss-feed-to-json",
-  "version": "0.0.5",
-  "description": "Rss Feed to Json: RSS and Atom feed JSON format generator",
-  "main": "dist/index.js",
-  "author": "Oluwadamilola Babalola",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^0.19.0",
-    "htmlparser": "^1.7.7",
-    "xml2js": "^0.4.22"
-  },
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --progress --watch --colors",
-    "prod": "cross-env NODE_ENV=production webpack -p --progress --colors",
-    "test": "node ./test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thedammyking/rss-feed-to-json.git"
-  },
-  "bugs": {
-    "url": "https://github.com/thedammyking/rss-feed-to-json/issues"
-  },
-  "homepage": "",
-  "keywords": [
-    "rss-to-json",
-    "rss-feed-to-json",
-    "rss",
-    "rssparser",
-    "rssreader",
-    "rss reader",
-    "rss parser",
-    "rss",
-    "parser",
-    "reader",
-    "xml2js",
-    "xml2json",
-    "rss to json",
-    "rss2json",
-    "rss 2 json",
-    "feed-read",
-    "feed read",
-    "feed",
-    "feedparser",
-    "feed-parser",
-    "feed parser",
-    "feed-reader",
-    "feedreader",
-    "feed reader",
-    "rss json"
-  ],
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^0.1.19",
-    "cross-env": "^5.2.1",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.8",
-    "webpack-node-externals": "^1.6.0"
-  }
+	"name": "rss-feed-to-json",
+	"version": "0.0.6",
+	"description": "Rss Feed to Json: RSS and Atom feed JSON format generator",
+	"main": "dist/index.js",
+	"author": "Oluwadamilola Babalola",
+	"license": "MIT",
+	"dependencies": {
+		"axios": "^0.19.0",
+		"htmlparser": "^1.7.7",
+		"xml2js": "^0.4.22"
+	},
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development webpack --progress --watch --colors",
+		"prod": "cross-env NODE_ENV=production webpack -p --progress --colors",
+		"test": "node ./test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thedammyking/rss-feed-to-json.git"
+	},
+	"bugs": {
+		"url": "https://github.com/thedammyking/rss-feed-to-json/issues"
+	},
+	"homepage": "",
+	"keywords": [
+		"rss-to-json",
+		"rss-feed-to-json",
+		"rss",
+		"rssparser",
+		"rssreader",
+		"rss reader",
+		"rss parser",
+		"rss",
+		"parser",
+		"reader",
+		"xml2js",
+		"xml2json",
+		"rss to json",
+		"rss2json",
+		"rss 2 json",
+		"feed-read",
+		"feed read",
+		"feed",
+		"feedparser",
+		"feed-parser",
+		"feed parser",
+		"feed-reader",
+		"feedreader",
+		"feed reader",
+		"rss json"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"babel-loader": "^8.0.6",
+		"clean-webpack-plugin": "^0.1.19",
+		"cross-env": "^5.2.1",
+		"uglifyjs-webpack-plugin": "^1.3.0",
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.8",
+		"webpack-node-externals": "^1.6.0"
+	}
 }
