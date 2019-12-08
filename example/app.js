@@ -6,13 +6,13 @@ var requestListener = function(req, res) {
 
 var Feed = require('../index');
 
-Feed.load('https://medium.com/feed/agent-banking', function(err, rss) {
-	return console.log('Synchronous', rss);
+Feed.convert('https://medium.com/feed/agent-banking', function(err, json) {
+	return console.log('Synchronous', json);
 });
 
-Feed.load('https://medium.com/feed/agent-banking')
-	.then(function(rss) {
-		return console.log('Asynchronous', rss);
+Feed.convert('https://medium.com/feed/agent-banking')
+	.then(function(json) {
+		return console.log('Asynchronous', json);
 	})
 	.catch(function(err) {
 		console.log(err);

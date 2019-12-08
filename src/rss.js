@@ -6,7 +6,7 @@ var util = require('util'),
 	htmlparser = require('htmlparser');
 
 module.exports = {
-	load: read
+	convert: read
 };
 
 function load(url, callback) {
@@ -14,19 +14,18 @@ function load(url, callback) {
 		.get(url, {
 			headers: {
 				'Access-Control-Allow-Origin': '*',
-				'User-Agent':
-					'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.75',
+				'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.75',
 				accept: 'text/html,application/xhtml+xml'
 			}
 		})
-		.then(function(res) {
+		.then(function (res) {
 			var parser = new xml2js.Parser({
 				trim: false,
 				normalize: true,
 				mergeAttrs: true
 			});
 
-			parser.parseString(res.data, function(err, result) {
+			parser.parseString(res.data, function (err, result) {
 				if (err) {
 					return callback(err, null);
 				} else {
@@ -37,7 +36,7 @@ function load(url, callback) {
 				}
 			});
 		})
-		.catch(function(error) {
+		.catch(function (error) {
 			console.log(error);
 			callback(error, null);
 		});
@@ -47,8 +46,8 @@ function read(url, callback) {
 	if (callback) {
 		return load(url, callback);
 	}
-	return new Promise(function(resolve, reject) {
-		return load(url, function(err, result) {
+	return new Promise(function (resolve, reject) {
+		return load(url, function (err, result) {
 			if (err) {
 				return reject(err);
 			}
@@ -91,15 +90,15 @@ function feedParser(json, isMedium) {
 		if (!util.isArray(channel.item)) {
 			channel.item = [channel.item];
 		}
-		channel.item.forEach(function(val) {
+		channel.item.forEach(function (val) {
 			var obj = {};
 			obj.title = !util.isNullOrUndefined(val.title) ? val.title[0] : '';
-			obj.description = !util.isNullOrUndefined(val.description)
-				? val.description[0]
-				: '';
-			obj.url = obj.link = !util.isNullOrUndefined(val.link)
-				? val.link[0]
-				: '';
+			obj.description = !util.isNullOrUndefined(val.description) ?
+				val.description[0] :
+				'';
+			obj.url = obj.link = !util.isNullOrUndefined(val.link) ?
+				val.link[0] :
+				'';
 
 			// Medium Support via @sstrubberg
 			if (val['guid']) {
@@ -165,7 +164,7 @@ function feedParser(json, isMedium) {
 				obj.enclosures = [];
 				if (!util.isArray(val.enclosure))
 					val.enclosure = [val.enclosure];
-				val.enclosure.forEach(function(enclosure) {
+				val.enclosure.forEach(function (enclosure) {
 					var enc = {};
 					for (var x in enclosure) {
 						enc[x] = enclosure[x][0];
@@ -181,7 +180,7 @@ function feedParser(json, isMedium) {
 
 function extractFirstImg(html) {
 	var parsedHtml, figure, img;
-	var handler = new htmlparser.DefaultHandler(function(error, dom) {
+	var handler = new htmlparser.DefaultHandler(function (error, dom) {
 		if (error) throw error;
 		else parsedHtml = dom;
 	});

@@ -1,6 +1,6 @@
-# RSS Feed to JSON
+# RSS in JSON
 
-Utility for parsing ATOM and RSS feed resources and normalize them to JSON format.
+Utility for parsing RSS and ATOM feeds to JSON format.
 
 This is a fork of [rss-to-json](https://github.com/nasa8x/rss-to-json).
 
@@ -10,22 +10,22 @@ This is a fork of [rss-to-json](https://github.com/nasa8x/rss-to-json).
 ## Install
 
 ```bash
-npm install rss-feed-to-json --save
+npm i rss-in-json
 ```
 
 ## Example
 
 ```js
-var Feed = require('rss-feed-to-json');
+var Feed = require('rss-in-json');
 
-Feed.load('https://medium.com/feed/agent-banking', function(err, rss) {
-	return console.log('Synchronous', rss);
+Feed.convert('https://medium.com/feed/agent-banking', function(err, json) {
+	return console.log('Synchronous', json);
 });
 
 //Asynchronous version
-Feed.load('https://medium.com/feed/agent-banking')
-	.then(function(rss) {
-		return console.log('Asynchronous', rss);
+Feed.convert('https://medium.com/feed/agent-banking')
+	.then(function(json) {
+		return console.log('Asynchronous', json);
 	})
 	.catch(function(err) {
 		console.log(err);

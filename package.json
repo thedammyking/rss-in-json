@@ -1,7 +1,7 @@
 {
-	"name": "rss-feed-to-json",
-	"version": "0.0.10",
-	"description": "Rss Feed to Json: RSS and Atom feed JSON format generator",
+	"name": "rss-in-json",
+	"version": "1.0.0",
+	"description": "Utility for parsing RSS and ATOM feeds to JSON format.",
 	"main": "dist/index.js",
 	"author": "Oluwadamilola Babalola",
 	"license": "MIT",
@@ -21,17 +21,17 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/thedammyking/rss-feed-to-json.git"
+		"url": "git+https://github.com/thedammyking/rss-in-json.git"
 	},
 	"bugs": {
-		"url": "https://github.com/thedammyking/rss-feed-to-json/issues"
+		"url": "https://github.com/thedammyking/rss-in-json/issues"
 	},
 	"directories": {
 		"example": "example"
 	},
 	"homepage": "",
 	"keywords": [
-		"rss-feed-to-json",
+		"rss-in-json",
 		"rss feed to json",
 		"rss feed json",
 		"rss-feed-json",
