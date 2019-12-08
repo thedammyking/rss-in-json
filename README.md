@@ -34,7 +34,7 @@ Feed.load('https://medium.com/feed/agent-banking')
 
 ## Result
 
-```json
+```js
   {
     items:[
       {
