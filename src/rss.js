@@ -5,43 +5,54 @@ var util = require('util'),
 	axios = require('axios'),
 	htmlparser = require('htmlparser');
 
+
 module.exports = {
-	load: function(url, callback) {
+	load: function (url, callback) {
 		var $ = this;
 
 		axios
 			.get(url, {
 				headers: {
-					'User-Agent':
-						'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.75',
-					accept: 'text/html,application/xhtml+xml'
+					"Access-Control-Allow-Origin": "*",
+					"User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.75',
+					"accept": 'text/html,application/xhtml+xml'
 				}
 			})
-			.then(function(res) {
+			.then(function (res) {
 				var parser = new xml2js.Parser({
 					trim: false,
 					normalize: true,
 					mergeAttrs: true
 				});
 
-				parser.parseString(res.data, function(err, result) {
+				parser.parseString(res.data, function (err, result) {
 					if (err) {
-						console.log(err);
-						callback(err, null);
+						return callback(err, null);
 					} else {
-						callback(
+						return callback(
 							null,
 							$.parser(result, url.includes('medium.com'))
 						);
 					}
 				});
 			})
-			.catch(function(error) {
+			.catch(function (error) {
 				console.log(error);
 				callback(error, null);
 			});
 	},
-	parser: function(json, isMedium) {
+	loadAsync: function (url) {
+		var $ = this
+		return new Promise(function (resolve, reject) {
+			return $.load(url, function (err, result) {
+				if (err) {
+					return reject(err)
+				}
+				return resolve(result)
+			})
+		});
+	},
+	parser: function (json, isMedium) {
 		var channel = json.rss.channel;
 		isMedium = isMedium || false;
 		var $ = this;
@@ -76,17 +87,17 @@ module.exports = {
 			if (!util.isArray(channel.item)) {
 				channel.item = [channel.item];
 			}
-			channel.item.forEach(function(val) {
+			channel.item.forEach(function (val) {
 				var obj = {};
-				obj.title = !util.isNullOrUndefined(val.title)
-					? val.title[0]
-					: '';
-				obj.description = !util.isNullOrUndefined(val.description)
-					? val.description[0]
-					: '';
-				obj.url = obj.link = !util.isNullOrUndefined(val.link)
-					? val.link[0]
-					: '';
+				obj.title = !util.isNullOrUndefined(val.title) ?
+					val.title[0] :
+					'';
+				obj.description = !util.isNullOrUndefined(val.description) ?
+					val.description[0] :
+					'';
+				obj.url = obj.link = !util.isNullOrUndefined(val.link) ?
+					val.link[0] :
+					'';
 
 				// Medium Support via @sstrubberg
 				if (val['guid']) {
@@ -154,7 +165,7 @@ module.exports = {
 					obj.enclosures = [];
 					if (!util.isArray(val.enclosure))
 						val.enclosure = [val.enclosure];
-					val.enclosure.forEach(function(enclosure) {
+					val.enclosure.forEach(function (enclosure) {
 						var enc = {};
 						for (var x in enclosure) {
 							enc[x] = enclosure[x][0];
@@ -167,12 +178,9 @@ module.exports = {
 		}
 		return rss;
 	},
-	read: function(url, callback) {
-		return this.load(url, callback);
-	},
-	extractFirstImg: function(html) {
+	extractFirstImg: function (html) {
 		var parsedHtml, figure, img;
-		var handler = new htmlparser.DefaultHandler(function(error, dom) {
+		var handler = new htmlparser.DefaultHandler(function (error, dom) {
 			if (error) throw error;
 			else parsedHtml = dom;
 		});
