@@ -4,7 +4,7 @@ Utility for parsing RSS and ATOM feeds to JSON format.
 
 This is a fork of [rss-to-json](https://github.com/nasa8x/rss-to-json).
 
--   Medium thumbnail support was added.
+-   Medium post thumbnail support was added.
 -   Asynchronous support was added.
 
 ## Install
