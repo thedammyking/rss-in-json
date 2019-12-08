@@ -1,6 +1,6 @@
 {
 	"name": "rss-feed-to-json",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"description": "Rss Feed to Json: RSS and Atom feed JSON format generator",
 	"main": "dist/index.js",
 	"author": "Oluwadamilola Babalola",
@@ -31,13 +31,20 @@
 	},
 	"homepage": "",
 	"keywords": [
-		"rss-to-json",
 		"rss-feed-to-json",
+		"rss feed to json",
+		"rss feed json",
+		"rss-feed-json",
+		"rss-feed-parser",
+		"rss feed parser",
+		"rssfeed",
 		"rss",
 		"rssparser",
 		"rssreader",
 		"rss reader",
+		"rss-reader",
 		"rss parser",
+		"rss-parser",
 		"rss",
 		"parser",
 		"reader",
@@ -55,7 +62,12 @@
 		"feed-reader",
 		"feedreader",
 		"feed reader",
-		"rss json"
+		"rss json",
+		"rssjson",
+		"rss-json",
+		"rss feed",
+		"rssfeed",
+		"rss-feed"
 	],
 	"devDependencies": {
 		"@babel/core": "^7.5.5",
