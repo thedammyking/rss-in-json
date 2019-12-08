@@ -10,6 +10,10 @@
 		"htmlparser": "^1.7.7",
 		"xml2js": "^0.4.22"
 	},
+	"engines": {
+		"node": ">=10",
+		"npm": ">=6"
+	},
 	"scripts": {
 		"dev": "cross-env NODE_ENV=development webpack --progress --watch --colors",
 		"prod": "cross-env NODE_ENV=production webpack -p --progress --colors",
