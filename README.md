@@ -1,6 +1,6 @@
 # RSS in JSON
 
-Utility for parsing RSS and ATOM feeds to JSON format.
+Utility for parsing RSS and ATOM feed to JSON format.
 
 This is a fork of [rss-to-json](https://github.com/nasa8x/rss-to-json).
 
