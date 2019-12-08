@@ -26,6 +26,9 @@
 	"bugs": {
 		"url": "https://github.com/thedammyking/rss-feed-to-json/issues"
 	},
+	"directories": {
+		"example": "example"
+	},
 	"homepage": "",
 	"keywords": [
 		"rss-to-json",
