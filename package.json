@@ -68,6 +68,13 @@
 		"rss-json",
 		"rss feed",
 		"rssfeed",
+		"atomfeed",
+		"atom-feed",
+		"atom-feed-parser",
+		"atom-parser",
+		"atomreader",
+		"atom-reader",
+		"rssfeed",
 		"rss-feed"
 	],
 	"devDependencies": {
