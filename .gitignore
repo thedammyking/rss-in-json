@@ -8,9 +8,5 @@ obj/*
 config.js
 app.js
 *.log
-note.txt
-package-lock.json
-yarn.lock
-dist/*
+dist
 
-!example/app.js
