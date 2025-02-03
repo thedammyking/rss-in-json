@@ -11,5 +11,6 @@ app.js
 note.txt
 package-lock.json
 yarn.lock
+dist/*
 
 !example/app.js
