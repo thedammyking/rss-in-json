@@ -1,28 +1,23 @@
-// Invoke 'strict' JavaScript mode
-'use strict';
-var util = require('util'),
-	xml2js = require('xml2js'),
-	axios = require('axios'),
-	htmlparser = require('htmlparser');
-
-module.exports = {
-	convert: read
-};
+import util from 'util';
+import xml2js from 'xml2js';
+import axios from 'axios';
+import htmlparser from 'htmlparser';
 
 function load(url, callback) {
 	axios
 		.get(url, {
 			headers: {
 				'Access-Control-Allow-Origin': '*',
-				'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.75',
-				accept: 'text/html,application/xhtml+xml'
-			}
+				'User-Agent':
+					'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36 OPR/63.0.3368.75',
+				accept: 'text/html,application/xhtml+xml',
+			},
 		})
 		.then(function (res) {
 			var parser = new xml2js.Parser({
 				trim: false,
 				normalize: true,
-				mergeAttrs: true
+				mergeAttrs: true,
 			});
 
 			parser.parseString(res.data, function (err, result) {
@@ -61,7 +56,7 @@ function feedParser(json, isMedium) {
 	isMedium = isMedium || false;
 
 	var rss = {
-		items: []
+		items: [],
 	};
 	if (util.isArray(json.rss.channel)) channel = json.rss.channel[0];
 
@@ -93,12 +88,12 @@ function feedParser(json, isMedium) {
 		channel.item.forEach(function (val) {
 			var obj = {};
 			obj.title = !util.isNullOrUndefined(val.title) ? val.title[0] : '';
-			obj.description = !util.isNullOrUndefined(val.description) ?
-				val.description[0] :
-				'';
-			obj.url = obj.link = !util.isNullOrUndefined(val.link) ?
-				val.link[0] :
-				'';
+			obj.description = !util.isNullOrUndefined(val.description)
+				? val.description[0]
+				: '';
+			obj.url = obj.link = !util.isNullOrUndefined(val.link)
+				? val.link[0]
+				: '';
 
 			// Medium Support via @sstrubberg
 			if (val['guid']) {
@@ -188,17 +183,19 @@ function extractFirstImg(html) {
 	parser.parseComplete(html);
 	if (
 		parsedHtml &&
-		parsedHtml.findIndex(item => item.name === 'figure') >= 0
+		parsedHtml.findIndex((item) => item.name === 'figure') >= 0
 	) {
-		var figureIndex = parsedHtml.findIndex(item => item.name === 'figure');
+		var figureIndex = parsedHtml.findIndex(
+			(item) => item.name === 'figure'
+		);
 		figure = parsedHtml[figureIndex];
 	}
 	if (
 		figure &&
 		figure.children &&
-		figure.children.findIndex(item => item.name === 'img') >= 0
+		figure.children.findIndex((item) => item.name === 'img') >= 0
 	) {
-		var imgIndex = figure.children.findIndex(item => item.name === 'img');
+		var imgIndex = figure.children.findIndex((item) => item.name === 'img');
 		img = figure.children[imgIndex];
 	}
 	if (img && img.attribs && img.attribs.src) {
@@ -206,3 +203,5 @@ function extractFirstImg(html) {
 	}
 	return '';
 }
+
+export const convert = read;
